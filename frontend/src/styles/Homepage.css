@@ -1,0 +1,29 @@
+/*
+src/styles/Homepage.css
+*/
+
+.homepage-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .parallax-background {
+    width: 100%;
+    background: url("http://www.testomic.com/public/codepen-assets/img/paralax/background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  
+
+ 
+  .content {
+    flex: 1; /* Ensure the parallax fills the remaining space */
+    position: relative;
+    overflow: hidden;
+}
+
+
+  

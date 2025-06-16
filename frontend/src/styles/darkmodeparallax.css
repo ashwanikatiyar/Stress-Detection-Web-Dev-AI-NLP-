@@ -1,0 +1,161 @@
+/* src/styles/darkmodeparallax.css */
+
+:root {
+    --scrub: #C0B3A0;
+    --day-Time : true;
+    --day-duration: 120s;
+    --foreground-duration: 30s;
+    --hills-duration: 60s;
+    --rocks1-duration: 120s;
+    --rocks2-duration: 240s;
+  }
+html, body {
+	margin: 0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+section {
+	margin: 0;
+	position:relative;
+	width: 100%;
+	height: 100%;
+	background-color: var(--scrub);
+}
+
+.content {
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+.darkparalax{
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:url("/public/assets/parallax/background-modified.jpg");
+	background-size:cover;
+	background-position: center; 
+}
+
+.darkparalax .layer{
+	position:absolute;
+	width:400%;
+}
+
+.darkparalax .foreground{
+	height:50%;						
+	bottom:0;	background:url("/public/assets/parallax/foreground-modified2.png") repeat-x;
+	background-size: 25% 100%;
+	animation: slideshow var(--foreground-duration) linear infinite;
+}
+
+.darkparalax .hills{
+	height:40%;						
+	bottom:15%;	background:url("/public/assets/parallax/hills-modified.png") repeat-x;
+	background-size: 25% 100%;
+	animation: slideshow var(--hills-duration) linear infinite;
+}
+
+.darkparalax .rocks1{
+	height:35%;						
+	bottom:25%;	background:url("/public/assets/parallax/rocks1-modified.png") repeat-x;
+	background-size: 25% 100%;
+	animation: slideshow var(--rocks1-duration) linear infinite;
+}
+
+.darkparalax .rocks2{
+	height:40%;						
+	bottom:15%;	background:url("/public/assets/parallax/rocks2-modified.png") repeat-x;
+	background-size: 25% 100%;
+	animation: slideshow var(--rocks2-duration) linear infinite ;
+}
+
+@keyframes slideshow {
+  0%    { transform: translateX(0%); }
+  100%  { transform: translateX(-50%); }
+}
+
+@keyframes dayToNight {
+  0%		{ 
+					-webkit-filter: hue-rotate(0deg) brightness(1); 
+					filter: hue-rotate(0deg) brightness(1); 
+				}
+  50% 	{ 
+					-webkit-filter: hue-rotate(180deg) brightness(0.1); 
+					filter: hue-rotate(180deg) brightness(0.1); 
+				}
+	100%  { 
+					-webkit-filter: hue-rotate(0deg) brightness(1); 
+					filter: hue-rotate(0deg) brightness(1); 
+				}
+}
+
+
+#link{
+	font-family: 'Roboto', sans-serif;
+	position: fixed;
+	bottom: 5%;
+	width: 100%;
+	text-align: center;
+}
+
+.img-url{
+	text-decoration: none;
+}
+
+.url{
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited{
+	color: white;
+}
+
+a:hover{
+	color: purple;
+}
+
+a:active{
+	color: white;
+}
+
+#small-logo{
+	width: 30px;
+	transform: translate(-10px, 12px);
+	opacity:1;
+}
+
+
+#versions{
+	font-family: 'Roboto', sans-serif;
+	position: fixed;
+	top: 5%;
+	width: 100%;
+	text-align: center;
+}
+
+.url-highlighted{
+	opacity: 1;
+	text-decoration: none;
+}
+
+.url-normal{
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+
+
+
+
+
+

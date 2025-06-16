@@ -1,0 +1,12 @@
+.timer {
+    position: absolute;
+    top: -50px; /* Adjust position above mic */
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff342b;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Background for visibility */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  

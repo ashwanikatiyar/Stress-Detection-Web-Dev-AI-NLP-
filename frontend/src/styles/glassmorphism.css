@@ -1,0 +1,80 @@
+/* Glassmorphism Main Container */
+.glass-main-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Profile Section */
+  .glass-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+  }
+  
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  /* Stats Section */
+  .glass-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .stat-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Charts Section */
+  .glass-charts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .chart {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Tile Hover Effect */
+.tile {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+  }
+  

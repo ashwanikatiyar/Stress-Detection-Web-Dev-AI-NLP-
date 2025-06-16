@@ -1,0 +1,70 @@
+/* src/styles/mic.css */
+
+.mic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Position relative to parent */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center using transform */
+    z-index: 10;
+    pointer-events: auto;
+  }
+  
+  /* Style the button */
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px; /* Bigger padding for larger size */
+    gap: 8px;
+    height: 80px; /* Adjusted for size */
+    width: 200px; /* Adjusted for size */
+    border: none;
+    background: #1b1b1cde;
+    border-radius: 50px; /* Fully rounded */
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for prominence */
+    transition: transform 0.2s ease, background 0.2s ease; /* Smooth hover effects */
+  }
+  
+  .button .label {
+    line-height: 20px;
+    font-size: 20px; /* Larger font for visibility */
+    color: #FF342B;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    background: #1b1b1c; /* Subtle color change */
+    transform: scale(1.1); /* Scale effect on hover */
+  }
+  
+  /* Add animation only on "clicked" class */
+  .clicked .svg-icon {
+    animation: scale 1s linear infinite; /* Trigger animation on click */
+  }
+  
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.05) rotate(10deg);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Style the SVG icon */
+  .svg-icon {
+    height: 32px; /* Larger size for better visibility */
+    width: 32px;
+  }
+  
