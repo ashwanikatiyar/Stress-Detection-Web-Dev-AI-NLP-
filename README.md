@@ -108,8 +108,6 @@ frontend/src/: Main React source files
 #### 📌 Future Improvements
 Improve UI/UX using Tailwind or Material UI
 
-Add voice/text input for real-time stress tracking
-
 Enable user login and personalized dashboards
 
 Graph-based visual feedback (charts for stress trends)
