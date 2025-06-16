@@ -127,12 +127,6 @@ Ashwani Katiyar
 
 ---
 
-### ✅ How to Use
-
-1. Copy this into a `README.md` file at the root of your repo.
-2. Optionally, add:
-   - Screenshots (`/assets/screenshots`)
-   - A live demo link (if hosted)
 
 Would you like me to help create a deployment-ready `Dockerfile`, or explain how to host the app (e.g., on Render or Vercel)?
 
